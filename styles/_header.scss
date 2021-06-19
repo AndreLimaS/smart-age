@@ -1,0 +1,60 @@
+.header {
+  .find {
+    width: 150px;
+    height: 40px;
+    border: 1px solid $border;
+    border-radius: 50px;
+    align-items: center;
+    display: block;
+    justify-content: space-around;
+    display: flex;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      background: $grayIcon;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    img {
+      padding: 0 10px;
+      transition: 0.2s;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        display: block;
+      }
+    }
+  }
+
+  .search {
+    background: $grayIcon;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 30px;
+  }
+
+  @media (max-width: 760px) {
+    .find {
+      display: none;
+    }
+    .buttons {
+      img {
+        &:nth-child(1),
+        &:nth-child(2) {
+          display: none;
+        }
+      }
+    }
+  }
+}
