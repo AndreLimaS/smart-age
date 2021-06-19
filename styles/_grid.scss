@@ -14,3 +14,22 @@
   grid-template-columns: 1fr 1fr;
   padding: 15px;
 }
+
+@media (max-width: 760px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "heading header"
+      "content content";
+  }
+  .header {
+    grid-template-columns: 1fr;
+  }
+}
+
+.heading {
+  grid-area: heading;
+  align-items: center;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
