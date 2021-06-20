@@ -21,7 +21,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
+      margin-left: 7%;
       width: 100%;
 
       h1 {
@@ -30,6 +30,25 @@
 
       span {
         @include subtitle-original;
+      }
+
+      .arrow {
+        display: flex;
+        align-items: center;
+        margin-top: 5%;
+
+        a {
+          @include button-explore;
+          transition: 0.2s;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+
+        span {
+          @include title-explore;
+        }
       }
     }
 
@@ -47,9 +66,18 @@
 
     @media (max-width: 760px) {
       flex-direction: column;
-
+      align-items: center;
       .subsession-2 {
-        margin: 3rem 0;
+        margin: 10%;
+        width: 70%;
+
+        h1 {
+          @include title-original-mobile;
+        }
+
+        span {
+          @include subtitle-original-mobile;
+        }
       }
     }
   }
@@ -71,6 +99,35 @@
 
     p {
       @include subtitle-original;
+    }
+
+    .arrow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 5%;
+      a {
+        @include button-explore;
+        transition: 0.2s;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      span {
+        @include title-explore;
+      }
+    }
+
+    @media (max-width: 760px) {
+      h1 {
+        @include title-classic-mobile;
+      }
+      p {
+        width: 275px;
+        text-align: center;
+      }
     }
   }
 
@@ -102,13 +159,41 @@
         @include subtitle-original;
         color: $white;
       }
+
+      .arrow {
+        display: flex;
+        align-items: center;
+        margin-top: 5%;
+        a {
+          @include button-explore;
+          transition: 0.2s;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+
+        span {
+          @include title-explore;
+          color: $white;
+        }
+      }
     }
 
     @media (max-width: 760px) {
       flex-direction: column;
-
+      align-items: center;
       .subsession-4 {
-        margin: 3rem 4rem;
+        margin: 10%;
+        width: 80%;
+
+        h1 {
+          @include title-original-mobile;
+        }
+
+        span {
+          @include subtitle-original-mobile;
+        }
       }
     }
   }

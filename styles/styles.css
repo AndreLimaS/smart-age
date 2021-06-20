@@ -272,9 +272,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-left: 7%;
   width: 100%;
 }
 
@@ -299,6 +297,50 @@ a {
   color: #000000;
 }
 
+.content .session-2 .subsession-2 .arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5%;
+}
+
+.content .session-2 .subsession-2 .arrow a {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #d5a368;
+  border-radius: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.content .session-2 .subsession-2 .arrow a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.content .session-2 .subsession-2 .arrow span {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.9em;
+  line-height: 16px;
+  letter-spacing: 0.2em;
+  margin-left: 15px;
+  text-transform: uppercase;
+}
+
 .content .session-2 .resposive-img {
   width: 100%;
   display: -webkit-box;
@@ -321,9 +363,29 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .content .session-2 .subsession-2 {
-    margin: 3rem 0;
+    margin: 10%;
+    width: 70%;
+  }
+  .content .session-2 .subsession-2 h1 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+  }
+  .content .session-2 .subsession-2 span {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 152.62%;
+    letter-spacing: 0.1em;
   }
 }
 
@@ -348,7 +410,7 @@ a {
   font-family: Raleway;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 1.1em;
   line-height: 23px;
   text-align: center;
   letter-spacing: 0.25em;
@@ -374,6 +436,70 @@ a {
   line-height: 27px;
   letter-spacing: 0.1em;
   color: #000000;
+}
+
+.content .session-3 .arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5%;
+}
+
+.content .session-3 .arrow a {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #d5a368;
+  border-radius: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.content .session-3 .arrow a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.content .session-3 .arrow span {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.9em;
+  line-height: 16px;
+  letter-spacing: 0.2em;
+  margin-left: 15px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 760px) {
+  .content .session-3 h1 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.6em;
+    line-height: 119.97%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #d5a368;
+  }
+  .content .session-3 p {
+    width: 275px;
+    text-align: center;
+  }
 }
 
 .content .session-4 {
@@ -436,15 +562,80 @@ a {
   color: #fff;
 }
 
+.content .session-4 .subsession-4 .arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5%;
+}
+
+.content .session-4 .subsession-4 .arrow a {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #d5a368;
+  border-radius: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.content .session-4 .subsession-4 .arrow a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.content .session-4 .subsession-4 .arrow span {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.9em;
+  line-height: 16px;
+  letter-spacing: 0.2em;
+  margin-left: 15px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
 @media (max-width: 760px) {
   .content .session-4 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .content .session-4 .subsession-4 {
-    margin: 3rem 4rem;
+    margin: 10%;
+    width: 80%;
+  }
+  .content .session-4 .subsession-4 h1 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+  }
+  .content .session-4 .subsession-4 span {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 152.62%;
+    letter-spacing: 0.1em;
   }
 }
 /*# sourceMappingURL=styles.css.map */
