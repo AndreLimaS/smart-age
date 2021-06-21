@@ -16,8 +16,6 @@ a {
 }
 
 .wrapper {
-  display: -ms-grid;
-  display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
       grid-template-areas: "header" "heading" "content" "footer";
@@ -38,6 +36,8 @@ a {
   .wrapper {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+    display: -ms-grid;
+    display: grid;
         grid-template-areas: "heading header" "content content";
   }
   .header {
@@ -50,6 +50,8 @@ a {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: heading;
+  display: -ms-grid;
+  display: grid;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -62,8 +64,6 @@ a {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: content;
-  display: -ms-grid;
-  display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   justify-items: center;
@@ -357,7 +357,7 @@ a {
   width: 100%;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 700px) {
   .content .session-2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -371,6 +371,25 @@ a {
     margin: 10%;
     width: 70%;
   }
+  .content .session-2 .subsession-2 h1 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+  }
+  .content .session-2 .subsession-2 span {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 152.62%;
+    letter-spacing: 0.1em;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .content .session-2 .subsession-2 h1 {
     font-family: Playfair Display;
     font-style: normal;
@@ -485,7 +504,7 @@ a {
   text-transform: uppercase;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   .content .session-3 h1 {
     font-family: Playfair Display;
     font-style: normal;
@@ -536,7 +555,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 5%;
+  margin: 5% 0 5% 5%;
   width: 100%;
 }
 
@@ -607,7 +626,7 @@ a {
   color: #fff;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 700px) {
   .content .session-4 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -629,6 +648,17 @@ a {
     line-height: 100%;
     letter-spacing: 0.1em;
   }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .content .session-4 .subsession-4 h1 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+  }
   .content .session-4 .subsession-4 span {
     font-family: Raleway;
     font-style: normal;
@@ -636,6 +666,194 @@ a {
     font-size: 1em;
     line-height: 152.62%;
     letter-spacing: 0.1em;
+  }
+}
+
+.content .slider-category {
+  margin-top: 10px;
+}
+
+.content .slider-category div {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .slider-category div span {
+  position: absolute;
+  margin-left: 32.5vw;
+  margin-bottom: 130px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: right;
+  letter-spacing: 0.25em;
+  color: #fff;
+}
+
+.content .slider-category div h1 {
+  position: absolute;
+  margin-left: 25vw;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 115px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.3em;
+  color: #fff;
+}
+
+.content .slider-category div img {
+  width: 80vw;
+}
+
+@media (max-width: 700px) {
+  .content .slider-category div span {
+    margin-left: 25vw;
+    margin-bottom: 80px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.25em;
+    color: #fff;
+  }
+  .content .slider-category div h1 {
+    margin-left: 12vw;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3em;
+    line-height: 119.97%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    letter-spacing: 0.3em;
+    color: #fff;
+  }
+}
+
+.content .slick-slide {
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  opacity: 0.5;
+}
+
+.content .slick-current {
+  opacity: 1;
+}
+
+.content .container-slider {
+  text-align: center;
+  margin: 5% 0;
+}
+
+.content .container-slider h1 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 96px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #472138;
+}
+
+.content .container-slider span {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.1em;
+  line-height: 27px;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+.content .container-slider .slider-shop div {
+  text-align: center;
+}
+
+.content .container-slider .slider-shop div img {
+  width: 100%;
+}
+
+.content .container-slider .slider-shop div span {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 152.62%;
+  letter-spacing: 0.1em;
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .content .container-slider h1 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    letter-spacing: 0.1em;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0 50px;
+    color: #472138;
+  }
+}
+
+@media (max-width: 700px) {
+  .content .container-slider h1 {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    letter-spacing: 0.1em;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0 50px;
+    color: #472138;
   }
 }
 /*# sourceMappingURL=styles.css.map */

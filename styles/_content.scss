@@ -64,13 +64,25 @@
       }
     }
 
-    @media (max-width: 760px) {
+    @media (max-width: 700px) {
       flex-direction: column;
       align-items: center;
       .subsession-2 {
         margin: 10%;
         width: 70%;
 
+        h1 {
+          @include title-original-mobile;
+        }
+
+        span {
+          @include subtitle-original-mobile;
+        }
+      }
+    }
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+      .subsession-2 {
         h1 {
           @include title-original-mobile;
         }
@@ -120,7 +132,7 @@
       }
     }
 
-    @media (max-width: 760px) {
+    @media (max-width: 768px) {
       h1 {
         @include title-classic-mobile;
       }
@@ -149,7 +161,7 @@
     .subsession-4 {
       display: flex;
       flex-direction: column;
-      margin-left: 5%;
+      margin: 5% 0 5% 5%;
       width: 100%;
       h1 {
         @include title-classic;
@@ -180,13 +192,19 @@
       }
     }
 
-    @media (max-width: 760px) {
+    @media (max-width: 700px) {
       flex-direction: column;
       align-items: center;
       .subsession-4 {
         margin: 10%;
         width: 80%;
-
+        h1 {
+          @include title-original-mobile;
+        }
+      }
+    }
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+      .subsession-4 {
         h1 {
           @include title-original-mobile;
         }
@@ -194,6 +212,82 @@
         span {
           @include subtitle-original-mobile;
         }
+      }
+    }
+  }
+  .slider-category {
+    margin-top: 10px;
+
+    div {
+      display: flex !important;
+      align-items: center;
+      span {
+        position: absolute;
+        margin-left: 32.5vw;
+        margin-bottom: 130px;
+        @include subtitle-carousel;
+      }
+      h1 {
+        position: absolute;
+        margin-left: 25vw;
+        @include title-carousel;
+      }
+      img {
+        width: 80vw;
+      }
+
+      @media (max-width: 700px) {
+        span {
+          margin-left: 25vw;
+          margin-bottom: 80px;
+          @include subtitle-carousel-mobile;
+        }
+        h1 {
+          margin-left: 12vw;
+          @include title-carousel-mobile;
+        }
+      }
+    }
+  }
+
+  .slick-slide {
+    transition: all ease-in-out 0.3s;
+    opacity: 0.5;
+  }
+
+  .slick-current {
+    opacity: 1;
+  }
+
+  .container-slider {
+    text-align: center;
+    margin: 5% 0;
+    h1 {
+      justify-content: center;
+      @include title-carousel-shop;
+    }
+    span {
+      @include subtitle-original;
+    }
+    .slider-shop {
+      div {
+        text-align: center;
+        img {
+          width: 100%;
+        }
+        span {
+          @include subtitle-original-mobile;
+        }
+      }
+    }
+    @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+      h1 {
+        @include title-carousel-shop-mobile;
+      }
+    }
+    @media (max-width: 700px) {
+      h1 {
+        @include title-carousel-shop-mobile;
       }
     }
   }

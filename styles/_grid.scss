@@ -1,5 +1,4 @@
 .wrapper {
-  display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
     "header"
@@ -18,6 +17,7 @@
 @media (max-width: 760px) {
   .wrapper {
     grid-template-columns: 1fr 1fr;
+    display: grid;
     grid-template-areas:
       "heading header"
       "content content";
@@ -29,6 +29,7 @@
 
 .heading {
   grid-area: heading;
+  display: grid;
   align-items: center;
   grid-template-columns: 1fr;
   justify-items: center;
@@ -36,7 +37,6 @@
 
 .content {
   grid-area: content;
-  display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
   align-items: center;
