@@ -166,3 +166,40 @@
   padding: 0 50px;
   color: $purple;
 }
+
+@mixin title-contact-us {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8em;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $white;
+}
+
+@mixin title-newsletter {
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: $yellow;
+}
+
+@mixin title-policy {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: $policy;
+}

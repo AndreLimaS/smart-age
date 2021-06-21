@@ -20,7 +20,8 @@
     display: grid;
     grid-template-areas:
       "heading header"
-      "content content";
+      "content content"
+      "footer footer";
   }
   .header {
     grid-template-columns: 1fr;
@@ -37,6 +38,13 @@
 
 .content {
   grid-area: content;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+footer {
+  grid-area: footer;
   grid-template-columns: 1fr;
   justify-items: center;
   align-items: center;
